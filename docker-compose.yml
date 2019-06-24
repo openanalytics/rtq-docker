@@ -1,0 +1,11 @@
+version: '3'
+services:
+  redis:
+    image: redis
+  rtq-worker:
+    build: rtq-client
+    depends_on: redis
+  rtq-producer:
+    build: rtq-client
+    depends_on: redis 
+  
