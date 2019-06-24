@@ -1,4 +1,0 @@
-
-default:
-  queue: 'demo:input'
-  
