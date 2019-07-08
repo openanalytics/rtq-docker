@@ -3,6 +3,7 @@ services:
   redis:
     image: redis
   rtq-worker:
+    image: openanalytics/rtq-client
     build: rtq-client
     environment:
         - REDIS_HOST=redis
@@ -10,6 +11,7 @@ services:
     depends_on:
         - redis
   rtq-producer:
+    image: openanalytics/rtq-client
     build: rtq-client
     environment:
         - REDIS_HOST=redis
