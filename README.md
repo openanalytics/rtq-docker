@@ -1,6 +1,8 @@
 
 # rtq-docker
 
+![rtq diagram](./rtq.svg)
+
 ## pull
 
 ```bash
