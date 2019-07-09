@@ -12,7 +12,7 @@ docker-compose pull
 ## start the redis server and the worker
 
 ```bash
-docker-compose up redis rtq-worker --no-build
+docker-compose up --no-build redis rtq-worker
 ```
 
 ## submit a task to the queue
